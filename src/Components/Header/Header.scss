@@ -1,0 +1,158 @@
+@import "../../Palette/Palette.scss";
+
+@font-face {
+    font-family: 'Monument';
+    src: url("../../Font/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Akira';
+    src: url("../../Font/Akira\ Expanded\ Demo.otf");
+}
+
+.header {
+    font-family: 'Akira';
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    background-color: $white;
+    color: $black;
+    box-shadow: 2px 2px 10px $black;
+
+    .title {
+        text-decoration: none;
+        margin-left: 3rem;
+        font-size: 2.3vh;
+    }
+
+    .navmenu {
+        font-family: 'Monument';
+        margin-left: auto;
+        margin-right: 5rem;
+        font-size: 1.8vh;
+        transition: all 0.5s ease;
+        
+        ul {
+            display: flex;
+            padding: 0;
+            flex-direction: row;
+        }
+
+        @media screen and (max-width: 768px) {
+            transition: all 0.5s ease;
+            ul {
+                display: none;
+                position: absolute;
+                top: 8vh;
+                left: 0;
+                flex-direction: column;
+                width: 100%;
+                height: 92vh;
+                background-color: white;
+                border-top: 1px solid black;
+            }
+
+            li {
+                text-align: center;
+                margin: 0;
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+
+            a {
+                color: $black;
+                width: 100%;
+                padding: 1.5rem 0;
+            }
+        }
+
+        li {
+            list-style-type: none;
+            margin: 1.5rem;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $brown;
+            }
+
+            a {
+                text-decoration: none;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .expanded {
+            transition: all 0.5s ease;
+
+            ul {
+                display: block;
+                position: absolute;
+                top: 5vh;
+                right: 0;
+                flex-direction: column;
+                width: 100vw;
+                height: 40vh;
+                background-color: white;
+                text-align: center;
+            }
+
+            li {
+                font-family: 'Monument';
+                font-size: 1rem;
+                list-style-type: none;
+                margin: 1.5rem;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: $brown;
+                }
+    
+                a {
+                    text-decoration: none;
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            a {
+                color: $black;
+                width: 100%;
+                padding: 1.5rem 0;
+            }
+        }
+    }
+
+    .hamburger {
+        border: 0;
+        height: 1.2rem;
+        width: 1.2rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: $black;
+        color: $white;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+        display: none;
+
+        &:hover {
+            background-color: $brown;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .hamburger {
+            display: block;
+        }
+    }
+}

@@ -1,1 +1,44 @@
-@import url(../../../Palette/Palette.scss);
+@import "../../../Palette/Palette.scss";
+@import "../../../Font/Font.scss";
+
+* {
+  font-family: "Monument";
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+@mixin setGapColumn($gapSize) {
+  display: flex;
+  flex-direction: column;
+  gap: $gapSize;
+}
+
+.footer__card {
+  padding: 40px;
+  background: $gray-200;
+  @include setGapColumn(25px);
+  letter-spacing: 0.3px;
+
+  .footer__cardTitle {
+    font-size: 14px;
+    color: $white;
+  }
+
+  ul {
+    @include setGapColumn(10px);
+    li {
+      font-size: 13px;
+      color: $white;
+      opacity: 0.5;
+      list-style: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

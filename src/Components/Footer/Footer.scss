@@ -1,0 +1,155 @@
+@import "../../Palette/Palette.scss";
+@import "../../Font/Font.scss";
+
+@mixin centerize($display: flex, $direction: column, $justifyContent: center) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+}
+
+@mixin coloringLink() {
+  text-decoration: none;
+  color: $white;
+}
+
+@mixin bordering(
+  $radius,
+  $paddingTopBottom,
+  $paddingRightLeft,
+  $borderSize,
+  $sizeFont
+) {
+  border-radius: $radius;
+  padding: $paddingTopBottom $paddingRightLeft;
+  border: $borderSize solid $white;
+  font-size: $sizeFont;
+}
+
+.footer {
+  overflow-x: hidden;
+  min-height: 100vh;
+  @include centerize(flex, column, 0);
+
+  // .footer__divider {
+  //   z-index: 2;
+  //   height: 10vh;
+  //   width: 105%;
+  //   background: $white;
+  //   transform: rotate(0.3deg);
+  // }
+
+  .footer__content {
+    z-index: 1;
+    min-height: 100vh;
+    @include centerize(flex, row, 0);
+    .footer__img {
+      height: auto;
+      background: url(../../Assets/yellowhoodie1.jpg);
+      background-size: cover;
+      -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      );
+      @include centerize(flex, column, center);
+      width: 35%;
+      padding: 50px;
+      color: $white;
+      gap: 50px;
+
+      .logo {
+        @include coloringLink();
+        span {
+          @include bordering(5px, 13px, 13px, 2px, 40px);
+        }
+      }
+
+      .logoMap {
+        color: $brown;
+        font-size: 8vw;
+        background: red;
+      }
+
+      h3 {
+        font-size: 33px;
+      }
+
+      .button {
+        @include coloringLink();
+        span {
+          @include bordering(4px, 7px, 25px, 2px, 14px);
+          &:hover {
+            border-color: $brown;
+          }
+        }
+      }
+    }
+
+    .footer__listCard {
+      height: auto;
+      width: 65%;
+      gap: 0;
+      @include centerize(flex, column, center);
+
+      .listCard {
+        height: 100%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+      }
+
+      hr {
+        width: 93%;
+        justify-self: center;
+        align-self: center;
+      }
+
+      .listSosmed {
+        color: $white;
+        align-items: center;
+        gap: 10px;
+        padding: 30px;
+        @include centerize(flex, row, flex-end);
+        h5 {
+          width: 100%;
+          opacity: 0.5;
+        }
+        a {
+          color: $white;
+          text-decoration: none;
+          opacity: 0.5;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .footer {
+    .footer__content {
+      @include centerize(flex, column, 0);
+      .footer__img {
+        background-position: center;
+        width: 100%;
+        -webkit-mask-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 0)
+        );
+      }
+      .footer__listCard {
+        .listSosmed {
+          h5 {
+            font-size: 12px;
+          }
+        }
+        width: 100%;
+      }
+    }
+  }
+}

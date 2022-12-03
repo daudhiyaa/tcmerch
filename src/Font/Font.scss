@@ -1,14 +1,26 @@
+$comforta-font: "Comfortaa", cursive;
+$inter-font: "Inter", sans-serif;
+$poppins-font: "Poppins", sans-serif;
+$quicksand-font: "Quicksand", sans-serif;
+
 @font-face {
-    font-family: 'Monument';
-    src: url("./MonumentExtended-Regular.otf");
+  font-family: "CreatoDisplay";
+  src: url("./CreatoDisplay-Regular.otf");
 }
 
 @font-face {
-    font-family: 'Akira';
-    src: url("./Akira\ Expanded\ Demo.otf");
+  font-family: "Akira";
+  src: url("./AkiraExpandedDemo.otf");
 }
 
 @font-face {
-    font-family: 'CreatoDisplay';
-    src: url("./CreatoDisplay-Regular.otf");
+  font-family: "Monument";
+  src: url("./MonumentExtended-Regular.otf");
 }
+
+@font-face {
+  font-family: "Monumen-Bold";
+  src: url("./MonumentExtended-Ultrabold.otf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@700&family=Poppins:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");

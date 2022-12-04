@@ -23,4 +23,14 @@ $quicksand-font: "Quicksand", sans-serif;
   src: url("./MonumentExtended-Ultrabold.otf");
 }
 
+@font-face {
+  font-family: "Archivo-expanded-extrabold";
+  src: url("./Archivo_Expanded-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Archivo-expanded";
+  src: url("./Archivo_Expanded-Regular.ttf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@700&family=Poppins:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");

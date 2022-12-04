@@ -17,9 +17,6 @@ function Footer() {
           <a href="" className="logo">
             <span>M</span>
           </a>
-          {/* <span className="logoMap">
-              <UilMapMarker />
-            </span> */}
           <h3>Find out about the sales at your local shop</h3>
           <a href="" className="button">
             <span>Find Shops</span>
@@ -34,20 +31,22 @@ function Footer() {
             <FooterCard />
           </div>
           <hr />
-          <div className="listSosmed">
+          <div className="underLine">
             <h5>© 2022 TCMerch. All rights reserved.</h5>
-            <a href="">
-              <UilFacebook />
-            </a>
-            <a href="">
-              <UilTwitter />
-            </a>
-            <a href="">
-              <UilInstagram />
-            </a>
-            <a href="">
-              <UilYoutube />
-            </a>
+            <div className="listSosmed">
+              <a href="">
+                <UilFacebook />
+              </a>
+              <a href="">
+                <UilTwitter />
+              </a>
+              <a href="">
+                <UilInstagram />
+              </a>
+              <a href="">
+                <UilYoutube />
+              </a>
+            </div>
           </div>
         </div>
       </div>

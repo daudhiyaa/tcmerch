@@ -49,26 +49,19 @@
       -webkit-mask-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0)
       );
       @include centerize(flex, column, center);
       width: 35%;
       padding: 50px;
       color: $white;
-      gap: 50px;
+      gap: 40px;
 
       .logo {
         @include coloringLink();
         span {
           @include bordering(5px, 13px, 13px, 2px, 40px);
         }
-      }
-
-      .logoMap {
-        color: $brown;
-        font-size: 8vw;
-        background: red;
       }
 
       h3 {
@@ -105,23 +98,26 @@
         align-self: center;
       }
 
-      .listSosmed {
-        color: $white;
+      .underLine {
         align-items: center;
-        gap: 10px;
         padding: 30px;
         @include centerize(flex, row, flex-end);
         h5 {
+          color: $white;
           width: 100%;
           opacity: 0.5;
         }
-        a {
-          color: $white;
-          text-decoration: none;
-          opacity: 0.5;
-          cursor: pointer;
-          &:hover {
-            opacity: 1;
+        .listSosmed {
+          gap: 10px;
+          display: flex;
+          a {
+            color: $white;
+            text-decoration: none;
+            opacity: 0.5;
+            cursor: pointer;
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }
@@ -135,6 +131,7 @@
       @include centerize(flex, column, 0);
       .footer__img {
         background-position: center;
+        padding: 30px;
         width: 100%;
         -webkit-mask-image: linear-gradient(
           to bottom,
@@ -143,12 +140,36 @@
         );
       }
       .footer__listCard {
-        .listSosmed {
+        width: 100%;
+        .underLine {
           h5 {
             font-size: 12px;
           }
         }
-        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .footer {
+    .footer__content {
+      .footer__img {
+        .button {
+          display: flex;
+          span {
+            padding: 7px 15px;
+          }
+        }
+      }
+
+      .footer__listCard {
+        hr {
+          width: 80%;
+        }
+        .underLine {
+          @include centerize();
+        }
       }
     }
   }

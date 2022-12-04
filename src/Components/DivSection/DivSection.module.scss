@@ -1,2 +1,96 @@
 @import "../../Font/Font.scss";
 @import "../../Palette/Palette.scss";
+
+.DivSection {
+    background-color: $brown-light;
+
+    .left_aligned {
+        position: relative;
+        text-align: left;
+        font-family: 'Archivo-expanded-extrabold';
+        color: $black;
+        font-size: 8rem;
+        margin-left: 5vw;
+        padding-top: 9vh;
+    }
+
+    .right_aligned {
+        position: relative;
+        text-align: right;
+        font-family: 'Archivo-expanded-extrabold';
+        color: $white;
+        font-size: 8rem;
+        margin-right: 5vw;
+    }
+
+    .description_holder {
+        width: 40vw;
+        position: relative;
+        display:flex;
+        margin-left: 4vw;
+        font-family: 'Archivo-expanded';
+        color: $black;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        padding-bottom: 9vh;
+    }
+
+    .arrow {
+        width: fit-content;
+        position:relative;
+        display: flex;
+        font-family: 'Archivo-expanded';
+        color: $black;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        text-align: right;
+        margin-left: auto;
+        padding-top: 2vh;
+        padding-right: 7vw;
+    }
+
+    .arrow_bottom {
+        display: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .left_aligned {
+            margin-left: 3vw;
+            font-size: 11vw;
+        }
+
+        .right_aligned {
+            margin-right: 3vw;
+            font-size: 11vw;
+        }
+
+        .description_holder {
+            margin-top: 5vh;
+            width: 90vw;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            padding-bottom: 5vh;
+        }
+
+        .arrow {
+            display: none;
+        }
+
+        .arrow_bottom {
+            width: fit-content;
+            position:relative;
+            display: flex;
+            font-family: 'Archivo-expanded';
+            color: $black;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            text-align: right;
+            margin-left: auto;
+            padding-top: 2vh;
+            padding-right: 7vw;
+            padding-bottom: 5vh;
+        }
+    }
+}

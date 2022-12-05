@@ -1,0 +1,88 @@
+@import "../../../Font/Font.scss";
+@import "../../../Palette/Palette.scss";
+
+.home {
+    width: 100vw;
+    height: fit-content;
+    background-color: $brown-light;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    position: absolute;
+
+    h1 {
+        position: relative;
+        z-index: 2;
+        margin-left: 4vw;
+        width: fit-content;
+        color: $black;
+        font-family: 'Archivo-expanded-extrabold';
+        font-size: 8vw;
+        line-height: 1rem;
+    }
+
+    h2 {
+        position: relative;
+        z-index: 2;
+        margin-left: 4vw;
+        width: fit-content;
+        color: $white;
+        font-family: 'Archivo-expanded-extrabold';
+        font-size: 8vw;
+        line-height: 1rem;
+    }
+
+    h3 {
+        margin-left: 4.5vw;
+        padding-top: 10vh;
+        width: fit-content;
+        color: $black;
+        font-family: 'Archivo-expanded';
+        font-size: 1vw;
+    }
+
+    img {
+        position: absolute;
+        opacity: 0.9;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 43vw;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            margin-left: 4.5vw;
+            width: fit-content;
+            color: $black;
+            font-family: 'Archivo-expanded-extrabold';
+            font-size: 10vw;
+            line-height: 0.5rem;
+        }
+
+        h2 {
+            margin-left: 4.5vw;
+            width: fit-content;
+            color: $white;
+            font-family: 'Archivo-expanded-extrabold';
+            font-size: 10vw;
+            line-height: 0.5rem;
+        }
+
+        h3 {
+            margin-left: 4.5vw;
+            padding-top: 7vh;
+            width: fit-content;
+            color: $black;
+            font-family: 'Archivo-expanded-extrabold';
+            font-size: 3vw;
+        }
+
+        img {
+            margin-top: 10vh;
+            position: relative;
+            width: 100vw;
+            height: 40vh;
+        }
+    }
+}

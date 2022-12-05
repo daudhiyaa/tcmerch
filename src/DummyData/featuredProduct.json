@@ -1,0 +1,78 @@
+{
+    "newestProducts":
+    {
+        "title": "Featured Products",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed volutpat sodales. Quis at mi amet, ipsum",
+        "contents":
+        [
+            {
+                "productName": "White Hoodie",
+                "price": "Rp159.000,-",
+                "image1": "whitehoodie1",
+                "image2": "whitehoodie2"
+            },
+            {
+                "productName": "Red Sweatshirt",
+                "price": "Rp129.000,-",
+                "image1": "redsweatshirt1",
+                "image2": "redsweatshirt2"
+            },
+            {
+                "productName": "Basic Shirt",
+                "price": "Rp99.000,-",
+                "image1": "basicshirt1",
+                "image2": "basicshirt2"
+            },
+            {
+                "productName": "Flanel T-shirt",
+                "price": "Rp169.000,-",
+                "image1": "flaneltshirt1",
+                "image2": "flaneltshirt2"
+            },
+            {
+                "productName": "Leather Jacket",
+                "price": "Rp459.000,-",
+                "image1": "leatherjacket1",
+                "image2": "leatherjacket2"
+            }
+        ]
+    },
+    "featuredProduct" :
+    {
+        "title": "Featured Products",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed volutpat sodales. Quis at mi amet, ipsum",
+        "contents":
+        [
+            {
+                "productName": "Yellow Hoodie",
+                "price": "Rp199.000,-",
+                "image1": "yellowhoodie1",
+                "image2": "yellowhoodie2"
+            },
+            {
+                "productName": "White Sweatshirt",
+                "price": "Rp149.000,-",
+                "image1": "whitesweatshirt1",
+                "image2": "whitesweatshirt2"
+            },
+            {
+                "productName": "Graphic Shirt",
+                "price": "Rp129.000,-",
+                "image1": "graphicshirt1",
+                "image2": "graphicshirt2"
+            },
+            {
+                "productName": "Floral T-shirt",
+                "price": "Rp139.000,-",
+                "image1": "floraltshirt1",
+                "image2": "floraltshirt2"
+            },
+            {
+                "productName": "Denim Jacket",
+                "price": "Rp299.000,-",
+                "image1": "denimjacket1",
+                "image2": "denimjacket2"
+            }
+        ]
+    }
+}

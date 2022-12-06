@@ -1,0 +1,41 @@
+@import "../../../Font/Font.scss";
+@import "../../../Palette/Palette.scss";
+
+.CategoryCard {
+  font-family: "Monument";
+  font-weight: 100;
+  font-size: 40px;
+  writing-mode: vertical-lr;
+  text-decoration: none;
+  display: flex;
+
+  padding: 40px 25px;
+  color: $white;
+  height: 100vh;
+  width: 13vw;
+  max-height: 100vh;
+  max-width: 13vw;
+  border-radius: 5px;
+  background: url(../../../Assets/whitesweatshirt1.jpg);
+  background-size: cover;
+  filter: grayscale(1) brightness(90%);
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CategoryCard {
+    align-items: flex-end;
+    padding: 10px 20px;
+    max-width: 100%;
+    width: 100%;
+    height: 19vh;
+    writing-mode: horizontal-tb;
+    font-size: 32px;
+  }
+}

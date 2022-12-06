@@ -10,8 +10,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 
     .newsletter {
+        z-index: 2;
         position: relative;
         display: flex;
         color: $white;
@@ -24,6 +26,7 @@
     }
 
     .textfield {
+        z-index: 2;
         position: relative;
         font-family: 'Archivo-expanded';
         display: flex;
@@ -36,6 +39,59 @@
             font-size: 1.3vw;
             text-align: center;
             color: $white;
+        }
+    }
+
+    .images {
+        position: absolute;
+        z-index: 1;
+        opacity: 40%;
+        width: 100vw;
+        height: 100vh;
+
+        .flanel {
+            width: 15vw;
+            height: 45vh;
+            object-fit: cover;
+            margin-top: 20vh;
+            margin-left: 13vw;
+            position: absolute;
+        }
+
+        .hoodie {
+            position: absolute;
+            width: 10vw;
+            height: 30vh;
+            object-fit: cover;
+            margin-top: 60vh;
+            margin-left: 23vw;
+        }
+
+        .shirt {
+            position: absolute;
+            width: 10vw;
+            height: 30vh;
+            object-fit: cover;
+            margin-left: 40%;
+            margin-top: 40vh;
+        }
+
+        .floralshirt {
+            position: absolute;
+            width: 15vw;
+            height: 40vh;
+            object-fit: cover;
+            margin-left: 65vw;
+            margin-top: 14vh;
+        }
+
+        .jacket {
+            position: absolute;
+            width: 11vw;
+            height: 37vh;
+            object-fit: cover;
+            margin-left: 67vw;
+            margin-top: 50vh;
         }
     }
 
@@ -54,6 +110,33 @@
             font-family: 'Archivo-expanded';
             display: flex;
             flex-direction: column;
+        }
+
+        .images {
+            .flanel {
+                width: 25vw;
+                height: 30vh;
+            }
+
+            .hoodie {
+                width: 22vw;
+                height: 27vh;
+            }
+
+            .shirt {
+                width: 20vw;
+                height: 20vh;
+            }
+
+            .floralshirt {
+                width: 20vw;
+                height: 28vh;
+            }
+
+            .jacket {
+                width: 25vw;
+                height: 30vh;
+            }
         }
     }
 }

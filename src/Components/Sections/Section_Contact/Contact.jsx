@@ -4,6 +4,11 @@ import { styled } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import flanelshirt from "../../../Assets/flanelshirt1.jpg";
+import hoodie from "../../../Assets/whitehoodie2.jpg";
+import shirt from "../../../Assets/graphictshirt1.jpg";
+import floralshirt from "../../../Assets/floralshirt1.jpg"
+import jacket from "../../../Assets/denimjacket1.jpg";
 
 const SubscribeButton = styled(Button)({
     boxShadow: 'none',
@@ -80,7 +85,13 @@ function Contact() {
                     SUBSCRIBE
                 </SubscribeButton>
             </div>
-            
+            <div className={styles.images}>
+                <img className={styles.flanel} src={flanelshirt} alt="Flanel Shirt"/>
+                <img className={styles.hoodie} src={hoodie} alt="Hoodie"/>
+                <img className={styles.shirt} src={shirt} alt="Shirt"/>
+                <img className={styles.floralshirt} src={floralshirt} alt="Floral Shirt"/>
+                <img className={styles.jacket} src={jacket} alt="Jacket"/>
+            </div>
         </div>
     )
 }

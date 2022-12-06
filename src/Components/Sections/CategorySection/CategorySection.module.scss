@@ -1,0 +1,16 @@
+@import "../../../Palette/Palette.scss";
+@import "../../../Font/Font.scss";
+
+#CategoryCard {
+  display: flex;
+  min-height: 100vh;
+  background-color: $brown-light;
+  padding: 20px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  #CategoryCard {
+    flex-direction: column;
+  }
+}

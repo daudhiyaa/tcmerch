@@ -1,0 +1,59 @@
+@import "../../../Font/Font.scss";
+@import "../../../Palette/Palette.scss";
+
+.contact {
+    background-color: $black;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .newsletter {
+        position: relative;
+        display: flex;
+        color: $white;
+        font-family: 'Archivo-expanded';
+        text-align: center;
+        font-size: 3vw;
+        width: 45vw;
+        height: fit-content;
+        margin-bottom: 10vh;
+    }
+
+    .textfield {
+        position: relative;
+        font-family: 'Archivo-expanded';
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+
+        h1 {
+            font-family: 'Archivo-expanded';
+            font-weight: lighter;
+            font-size: 1.3vw;
+            text-align: center;
+            color: $white;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .newsletter {
+            font-family: 'Archivo-expanded';
+            text-align: center;
+            font-size: 6vw;
+            width: 90vw;
+            height: fit-content;
+            margin-bottom: 10vh;
+        }
+
+        .textfield {
+            width: 90vw;
+            font-family: 'Archivo-expanded';
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

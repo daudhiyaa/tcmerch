@@ -9,8 +9,9 @@
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
-  #CategoryCard {
+@media screen and (max-width: 790px) {
+  #CategorySection {
     flex-direction: column;
+    gap: 10px;
   }
 }

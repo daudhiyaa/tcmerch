@@ -3,7 +3,7 @@ import CategoryCard from "../../Card/CategoryCard/CategoryCard";
 
 function CategorySection() {
   return (
-    <section id="CategorySection">
+    <section id={styles.CategorySection}>
       <CategoryCard />
       <CategoryCard />
       <CategoryCard />

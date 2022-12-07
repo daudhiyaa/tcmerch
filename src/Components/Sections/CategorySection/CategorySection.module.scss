@@ -1,12 +1,13 @@
 @import "../../../Palette/Palette.scss";
 @import "../../../Font/Font.scss";
 
-#CategoryCard {
+#CategorySection {
   display: flex;
   min-height: 100vh;
   background-color: $brown-light;
   padding: 20px;
   display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 790px) {

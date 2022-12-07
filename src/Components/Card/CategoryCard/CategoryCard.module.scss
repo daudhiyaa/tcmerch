@@ -12,28 +12,51 @@
   padding: 40px 25px;
   color: $white;
   height: 100vh;
-  width: 13vw;
   max-height: 100vh;
-  max-width: 13vw;
+  width: 14.5vw;
+  max-width: 14.5vw;
   border-radius: 5px;
   background: url(../../../Assets/whitesweatshirt1.jpg);
+  // background: rebeccapurple;
   background-size: cover;
   filter: grayscale(1) brightness(90%);
   transition: 0.5s;
   cursor: pointer;
-  overflow: hidden;
 
   &:hover {
     filter: grayscale(0);
   }
+
+  // span {
+  //   img {
+  //     height: 100%;
+  //     width: 100%;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     object-fit: cover;
+  //   }
+  // }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
+  .CategoryCard {
+    width: 13vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .CategoryCard {
+    width: 12vw;
+  }
+}
+
+@media screen and (max-width: 790px) {
   .CategoryCard {
     align-items: flex-end;
     padding: 10px 20px;
     max-width: 100%;
-    width: 100%;
+    width: auto;
     height: 19vh;
     writing-mode: horizontal-tb;
     font-size: 32px;

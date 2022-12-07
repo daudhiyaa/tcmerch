@@ -3,10 +3,10 @@ import hoodie from "../../../Assets/whitesweatshirt1.jpg";
 
 function CategoryCard() {
   return (
-    <a href="" className={styles.CategoryCard}>
+    <a href="./CategoryCard.jsx" className={styles.CategoryCard}>
       <span>
-        {/* <img src={hoodie} alt="" /> */}
-        SweatShirts
+        <img src={hoodie} alt="" />
+        <p>SweatShirts</p>
       </span>
     </a>
   );

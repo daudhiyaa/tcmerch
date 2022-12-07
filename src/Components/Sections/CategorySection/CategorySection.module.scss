@@ -5,7 +5,7 @@
   display: flex;
   min-height: 100vh;
   background-color: $brown-light;
-  padding: 20px;
+  // padding: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -14,4 +14,5 @@
   #CategorySection {
     flex-direction: column;
     gap: 10px;
+}
 }

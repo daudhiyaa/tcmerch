@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { UilBars } from "@iconscout/react-unicons";
 import "./Header.scss";
 
 function Header() {
@@ -21,7 +22,7 @@ function Header() {
             setExpanded(!isExpanded);
           }}
         >
-          =
+          <UilBars />
         </div>
       </div>
     </div>

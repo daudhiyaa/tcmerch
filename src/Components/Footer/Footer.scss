@@ -27,8 +27,9 @@
 
 .footer {
   overflow-x: hidden;
-  min-height: 100vh;
+  // min-height: 100vh;
   @include centerize(flex, column, 0);
+  background: $gray-200;
 
   // .footer__divider {
   //   z-index: 2;
@@ -48,7 +49,7 @@
       background-size: cover;
       -webkit-mask-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.85),
         rgba(0, 0, 0, 0)
       );
       @include centerize(flex, column, center);
@@ -130,6 +131,7 @@
     .footer__content {
       @include centerize(flex, column, 0);
       .footer__img {
+        min-height: 53vh;
         background-position: center;
         padding: 30px;
         width: 100%;

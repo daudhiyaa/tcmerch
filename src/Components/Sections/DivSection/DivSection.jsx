@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./DivSection.module.scss";
+import ProductCard from "../../Card/ProductCard/ProductCard";
 import { UilAngleDoubleRight } from "@iconscout/react-unicons";
 
 function DivSection() {
@@ -18,6 +19,12 @@ function DivSection() {
       </div>
       <div className={styles.arrow_bottom}>
         VIEW ALL <UilAngleDoubleRight />
+      </div>
+      <div className={styles.productCards}>
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </div>
     </div>
   );

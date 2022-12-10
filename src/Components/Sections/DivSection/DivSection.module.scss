@@ -55,6 +55,13 @@
     display: none;
   }
 
+  .productCards {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   @media screen and (max-width: 1000px) {
     .left_aligned {
       margin-left: 3vw;

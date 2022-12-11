@@ -19,10 +19,11 @@
   cursor: pointer;
 
     img {
+      top: 0;
       right: 0;
       z-index: 2;
       position: absolute;
-      height: 110vh;
+      height: 90vh;
       width: 15vw;
       object-fit: cover;
       border-radius: 0.5rem;
@@ -31,8 +32,8 @@
     p {
       width: fit-content;
       height: fit-content;
-      right: 0px;
-      bottom: 0px;
+      right: 1rem;
+      top: 2rem;
       position: absolute;
       z-index: 3;
     }

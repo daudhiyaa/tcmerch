@@ -1,0 +1,43 @@
+@import "../../Palette/Palette.scss";
+@import "../../Font/Font.scss";
+
+section{
+    position: relative;
+    background-color: $black;
+    color: $brown;
+    font-family: helvetica;
+    text-transform: uppercase;
+    overflow-x: hidden;
+
+    div{
+        display:flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        min-width: 100%;
+
+        .news_message {
+            display : flex;
+            flex-shrink: 0;
+            height: 15vh;
+            align-items: center;
+            animation: slide-left 25s linear infinite;
+
+            p {
+                font-size: 8vh;
+                padding-left: 3vh;
+            }
+
+            @keyframes slide-left {
+                from {
+                    -webkit-transform: translateX(0);
+                            transform: translateX(0);
+                }
+
+                to {
+                    -webkit-transform: translateX(-100%);
+                            transform: translateX(-100%);
+                }
+            }
+        }
+    }
+  }

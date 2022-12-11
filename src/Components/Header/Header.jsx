@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { UilBars } from "@iconscout/react-unicons";
 import "./Header.scss";
 
 function Header() {
@@ -6,7 +7,7 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="title">Internship</div>
+      <div className="title">TC MERCH</div>
       <div className={isExpanded ? "expanded" : "navmenu"}>
         <ul>
           <li>Home</li>
@@ -21,7 +22,7 @@ function Header() {
             setExpanded(!isExpanded);
           }}
         >
-          =
+          <UilBars />
         </div>
       </div>
     </div>

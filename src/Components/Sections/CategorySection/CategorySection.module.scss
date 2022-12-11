@@ -2,12 +2,16 @@
 @import "../../../Font/Font.scss";
 
 #CategorySection {
+  width: 100vw;
+  position: relative;
   display: flex;
   min-height: 100vh;
   background-color: $brown-light;
+  padding-top: 25vh;
   // padding: 20px;
   display: flex;
   justify-content: space-around;
+  height: 120vh;
 }
 
 @media screen and (max-width: 790px) {

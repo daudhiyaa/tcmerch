@@ -3,11 +3,10 @@
 
 .home {
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
     background-color: $brown-light;
     padding-top: 10vh;
-    padding-bottom: 10vh;
-    position: absolute;
+    position: relative;
 
     h1 {
         position: relative;
@@ -17,7 +16,7 @@
         color: $black;
         font-family: 'Archivo-expanded-extrabold';
         font-size: 8vw;
-        line-height: 1rem;
+        line-height: 8vw;
     }
 
     h2 {
@@ -28,7 +27,7 @@
         color: $white;
         font-family: 'Archivo-expanded-extrabold';
         font-size: 8vw;
-        line-height: 1rem;
+        line-height: 8vw;
     }
 
     h3 {
@@ -57,7 +56,7 @@
             color: $black;
             font-family: 'Archivo-expanded-extrabold';
             font-size: 10vw;
-            line-height: 0.5rem;
+            line-height: 10vw;
         }
 
         h2 {
@@ -66,7 +65,7 @@
             color: $white;
             font-family: 'Archivo-expanded-extrabold';
             font-size: 10vw;
-            line-height: 0.5rem;
+            line-height: 10vw;
         }
 
         h3 {

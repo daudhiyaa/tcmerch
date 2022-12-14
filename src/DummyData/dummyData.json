@@ -1,4 +1,27 @@
 {
+    "categorySection":
+    [
+        {
+            "title": "Hoodies",
+            "background": "whitehoodie1.jpg"
+        },
+        {
+            "title": "Sweatshirts",
+            "background": "redsweatshirt1.jpg"
+        },
+        {
+            "title": "Shirts",
+            "background": "floralshirt2.jpg"
+        },
+        {
+            "title": "T-Shirts",
+            "background": "graphictshirt1.jpg"
+        },
+        {
+            "title": "Jackets",
+            "background": "leatherjacket2.jpg"
+        }
+    ],
     "newestProducts":
     {
         "title": "Newest Products",

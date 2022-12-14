@@ -7,17 +7,24 @@ import DivSection from "./Components/Sections/DivSection/DivSection";
 import Contact from "./Components/Sections/Section_Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import SlidingText from "./Components/SlidingText/SlidingText";
+import DummyData from "./DummyData/dummyData.json";
 
 function App() {
+  const categoryData = DummyData.categorySection;
+  const newestProductData = DummyData.newestProducts;
+
   return (
     <div className={styles.App}>
       <Header />
       <Home />
       <SlidingText />
-      <Category />
+      <Category arrayOfCategory={categoryData} />
+      <DivSection newProduct={newestProductData} />
       <DivSection />
+      {/* To-do: integrate json data to featured product section */}
       <Contact />
       <Footer />
+      {/* To=do integrate json data to footer */}
     </div>
   );
 }

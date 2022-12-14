@@ -3,28 +3,30 @@ import styles from "./DivSection.module.scss";
 import ProductCard from "../../Card/ProductCard/ProductCard";
 import { UilAngleDoubleRight } from "@iconscout/react-unicons";
 
-function DivSection() {
+function DivSection(props) {
+  const {newProduct} = props;
+  const left_title = (newProduct === undefined ? "Our" : newProduct.leftTitle);
+  const right_title = (newProduct === undefined ? "Our" : newProduct.rightTitle);
+  const description = (newProduct === undefined ? "Our" : newProduct.description);
+
+  const arrayOfProducts = (newProduct === undefined ? [] : newProduct.contents);
+  // console.log(arrayOfProducts);
+
   return (
     <div className={styles.DivSection}>
-      <div className={styles.left_aligned}>NEWEST</div>
-      <div className={styles.right_aligned}>PRODUCTS</div>
+      <div className={styles.left_aligned}>{left_title}</div>
+      <div className={styles.right_aligned}>{right_title}</div>
       <div className={styles.arrow}>
         VIEW ALL <UilAngleDoubleRight />
       </div>
-      <div className={styles.description_holder}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat
-        etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue
-        nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed
-        volutpat sodales. Quis at mi amet, ipsum.
-      </div>
+      <div className={styles.description_holder}>{description}</div>
       <div className={styles.arrow_bottom}>
         VIEW ALL <UilAngleDoubleRight />
       </div>
       <div className={styles.productCards}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {Array(arrayOfProducts.length).fill(null).map((_, i) => (
+            <ProductCard cardsData={arrayOfProducts === undefined ? {} : arrayOfProducts.slice(i*1, i + 1)} />
+        ))}
       </div>
     </div>
   );

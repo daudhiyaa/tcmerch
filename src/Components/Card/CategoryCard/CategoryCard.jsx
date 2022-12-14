@@ -1,14 +1,19 @@
 import styles from "./CategoryCard.module.scss";
-import hoodie from "../../../Assets/whitesweatshirt1.jpg";
 
-function CategoryCard() {
+function CategoryCard(props) {
+  const { cardsData } = props;
+  const title = cardsData[0].title;
+  const image = cardsData[0].background;
+
   return (
-    <a href="./CategoryCard.jsx" className={styles.CategoryCard}>
-      <span>
-        <img src={hoodie} alt="" />
-        <p>SweatShirts</p>
-      </span>
-    </a>
+    <div>
+      <a href="./CategoryCard.jsx" className={styles.CategoryCard}>
+        <span>
+          <img src={require("../../../Assets/" + image)} alt="" />
+          <p>{title}</p>
+        </span>
+      </a>
+    </div>
   );
 }
 

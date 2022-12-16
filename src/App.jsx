@@ -12,6 +12,7 @@ import DummyData from "./DummyData/dummyData.json";
 function App() {
   const categoryData = DummyData.categorySection;
   const newestProductData = DummyData.newestProducts;
+  const footerCardData = DummyData.footer;
 
   return (
     <div className={styles.App}>
@@ -23,8 +24,7 @@ function App() {
       <DivSection />
       {/* To-do: integrate json data to featured product section */}
       <Contact />
-      <Footer />
-      {/* To=do integrate json data to footer */}
+      <Footer arrayOfFooter={footerCardData} />
     </div>
   );
 }

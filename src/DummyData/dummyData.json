@@ -21,6 +21,7 @@
       "background": "leatherjacket2.jpg"
     }
   ],
+
   "newestProducts": {
     "leftTitle": "Newest",
     "rightTitle": "Products",
@@ -58,8 +59,10 @@
       }
     ]
   },
-  "featuredProduct": {
-    "title": "Featured Products",
+
+  "featuredProducts": {
+    "leftTitle": "Featured",
+    "rightTitle": "Products",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed volutpat sodales. Quis at mi amet, ipsum",
     "contents": [
       {
@@ -94,6 +97,7 @@
       }
     ]
   },
+
   "footer": [
     {
       "title": "Categories",

@@ -4,11 +4,12 @@ import {
   UilYoutube,
   UilInstagram,
   UilFacebook,
-  UilMapMarker,
 } from "@iconscout/react-unicons";
 import FooterCard from "../Card/FooterCard/FooterCard";
 
-function Footer() {
+function Footer(props) {
+  const { arrayOfFooter } = props;
+
   return (
     <footer className="footer">
       <div className="footer__divider"></div>
@@ -25,10 +26,11 @@ function Footer() {
 
         <div className="footer__listCard">
           <div className="listCard">
-            <FooterCard />
-            <FooterCard />
-            <FooterCard />
-            <FooterCard />
+            {Array(4)
+              .fill(null)
+              .map((_, i) => (
+                <FooterCard footerData={arrayOfFooter.slice(i * 1, i + 1)} />
+              ))}
           </div>
           <hr />
           <div className="underLine">

@@ -4,12 +4,18 @@ import ProductCard from "../../Card/ProductCard/ProductCard";
 import { UilAngleDoubleRight } from "@iconscout/react-unicons";
 
 function DivSection(props) {
-  const {newProduct} = props;
-  const left_title = (newProduct === undefined ? "Our" : newProduct.leftTitle);
-  const right_title = (newProduct === undefined ? "Our" : newProduct.rightTitle);
-  const description = (newProduct === undefined ? "Our" : newProduct.description);
+  const { categorySection } = props;
+  const left_title =
+    categorySection === undefined ? "Featured" : categorySection.leftTitle;
+  const right_title =
+    categorySection === undefined ? "Products" : categorySection.rightTitle;
+  const description =
+    categorySection === undefined
+      ? "Featured products description"
+      : categorySection.description;
 
-  const arrayOfProducts = (newProduct === undefined ? [] : newProduct.contents);
+  const arrayOfProducts =
+    categorySection === undefined ? [] : categorySection.contents;
   // console.log(arrayOfProducts);
 
   return (
@@ -24,9 +30,17 @@ function DivSection(props) {
         VIEW ALL <UilAngleDoubleRight />
       </div>
       <div className={styles.productCards}>
-        {Array(arrayOfProducts.length).fill(null).map((_, i) => (
-            <ProductCard cardsData={arrayOfProducts === undefined ? {} : arrayOfProducts.slice(i*1, i + 1)} />
-        ))}
+        {Array(arrayOfProducts.length)
+          .fill(null)
+          .map((_, i) => (
+            <ProductCard
+              cardsData={
+                arrayOfProducts === undefined
+                  ? {}
+                  : arrayOfProducts.slice(i * 1, i + 1)
+              }
+            />
+          ))}
       </div>
     </div>
   );

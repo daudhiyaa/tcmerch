@@ -4,14 +4,14 @@ import cart from "../../../Assets/cart.png";
 import coloredCart from "../../../Assets/cartcolor.png";
 
 function ProductCard(props) {
-  const {cardsData} = props;
+  const { cardsData } = props;
   const item = cardsData[0];
   // console.log(props);
 
-  const productName = (item === undefined ? "Our product" : item.productName);
-  const price = (item === undefined ? "Rp,-" : item.price);
-  const image1 = (item === undefined ? "yellowhoodie1.jpg" : item.image1);
-  const image2 = (item === undefined ? "yellowhoodie2.jpg" : item.image2);
+  const productName = item === undefined ? "Our product" : item.productName;
+  const price = item === undefined ? "Rp,-" : item.price;
+  const image1 = item === undefined ? "yellowhoodie1.jpg" : item.image1;
+  const image2 = item === undefined ? "yellowhoodie2.jpg" : item.image2;
   // console.log(image1);
 
   const [isHoveredImg, setHoveredImg] = useState(false);
@@ -28,7 +28,9 @@ function ProductCard(props) {
             setHoveredImg(false);
           }}
           src={
-            isHoveredImg ? require("../../../Assets/" + image1) : require("../../../Assets/" + image2)
+            isHoveredImg
+              ? require("../../../Assets/" + image1)
+              : require("../../../Assets/" + image2)
           }
           alt="hoodie"
         ></img>

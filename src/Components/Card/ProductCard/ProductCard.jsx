@@ -3,7 +3,17 @@ import styles from "./ProductCard.module.scss";
 import cart from "../../../Assets/cart.png";
 import coloredCart from "../../../Assets/cartcolor.png";
 
-function ProductCard() {
+function ProductCard(props) {
+  const {cardsData} = props;
+  const item = cardsData[0];
+  // console.log(props);
+
+  const productName = (item === undefined ? "Our product" : item.productName);
+  const price = (item === undefined ? "Rp,-" : item.price);
+  const image1 = (item === undefined ? "yellowhoodie1.jpg" : item.image1);
+  const image2 = (item === undefined ? "yellowhoodie2.jpg" : item.image2);
+  // console.log(image1);
+
   const [isHoveredImg, setHoveredImg] = useState(false);
   const [isHoveredCart, setHoveredCart] = useState(false);
 
@@ -18,16 +28,14 @@ function ProductCard() {
             setHoveredImg(false);
           }}
           src={
-            isHoveredImg
-              ? require("../../../Assets/yellowhoodie2.jpg")
-              : require("../../../Assets/yellowhoodie1.jpg")
+            isHoveredImg ? require("../../../Assets/" + image1) : require("../../../Assets/" + image2)
           }
           alt="hoodie"
         ></img>
         <div className={styles.text}>
           <div className={styles.price}>
-            <h1>Yellow Hoodie</h1>
-            <h2>Rp199.000,-</h2>
+            <h1>{productName}</h1>
+            <h2>{price}</h2>
           </div>
           <img
             onMouseEnter={() => {

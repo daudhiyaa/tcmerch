@@ -9,11 +9,11 @@ section{
     text-transform: uppercase;
     overflow-x: hidden;
 
-    div{
+    .news {
         display:flex;
         flex-wrap: nowrap;
         white-space: nowrap;
-        min-width: 100%;
+        min-width: 15rem;
 
         .news_message {
             display : flex;

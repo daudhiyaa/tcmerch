@@ -5,6 +5,7 @@
   background-color: $brown-light;
 
   .left_aligned {
+    text-transform: uppercase;
     position: relative;
     text-align: left;
     font-family: "Archivo-expanded-extrabold";
@@ -15,6 +16,7 @@
   }
 
   .right_aligned {
+    text-transform: uppercase;
     position: relative;
     text-align: right;
     font-family: "Archivo-expanded-extrabold";

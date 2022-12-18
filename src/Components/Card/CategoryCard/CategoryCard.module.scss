@@ -7,7 +7,7 @@
   z-index: 1;
   font-family: "Monument";
   font-weight: 100;
-  font-size: 40px;
+  font-size: 30px;
   writing-mode: vertical-lr;
   text-decoration: none;
   display: flex;
@@ -18,51 +18,51 @@
   transition: 0.5s;
   cursor: pointer;
 
-    img {
-      top: 0;
-      right: 0;
-      z-index: 2;
-      position: absolute;
-      height: 90vh;
-      width: 15vw;
-      object-fit: cover;
-      border-radius: 0.5rem;
-    }
+  img {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    position: absolute;
+    height: 90vh;
+    width: 15vw;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
 
-    p {
-      width: fit-content;
-      height: inherit;
-      right: 1rem;
-      bottom: -85vh;
-      position: absolute;
-      z-index: 3;
-    }
+  p {
+    width: fit-content;
+    height: inherit;
+    right: 1rem;
+    bottom: -85vh;
+    position: absolute;
+    z-index: 3;
+  }
 
   &:hover {
     filter: grayscale(0);
   }
 }
 
-// @media screen and (max-width: 1150px) {
-//   .CategoryCard {
-//     width: 13vw;
-//   }
-// }
+@media screen and (max-width: 1150px) {
+  .CategoryCard {
+    width: 13vw;
+  }
+}
 
-// @media screen and (max-width: 900px) {
-//   .CategoryCard {
-//     width: 12vw;
-//   }
-// }
+@media screen and (max-width: 900px) {
+  .CategoryCard {
+    width: 12vw;
+  }
+}
 
-// @media screen and (max-width: 790px) {
-//   .CategoryCard {
-//     align-items: flex-end;
-//     padding: 10px 20px;
-//     max-width: 100%;
-//     width: auto;
-//     height: 19vh;
-//     writing-mode: horizontal-tb;
-//     font-size: 32px;
-//   }
-// }
+@media screen and (max-width: 790px) {
+  .CategoryCard {
+    align-items: flex-end;
+    padding: 10px 20px;
+    max-width: 100%;
+    width: auto;
+    height: 19vh;
+    writing-mode: horizontal-tb;
+    font-size: 22px;
+  }
+}

@@ -1,43 +1,44 @@
 @import "../../Palette/Palette.scss";
 @import "../../Font/Font.scss";
 
-section{
-    position: relative;
-    background-color: $black;
-    color: $brown;
-    font-family: helvetica;
-    text-transform: uppercase;
-    overflow-x: hidden;
+section {
+  position: relative;
+  background-color: $white;
+  color: $brown;
+  font-family: helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  transform: rotate(0.1deg);
 
-    .news {
-        display:flex;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-        min-width: 15rem;
+  .news {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    min-width: 15rem;
 
-        .news_message {
-            display : flex;
-            flex-shrink: 0;
-            height: 15vh;
-            align-items: center;
-            animation: slide-left 25s linear infinite;
+    .news_message {
+      display: flex;
+      flex-shrink: 0;
+      height: 15vh;
+      align-items: center;
+      animation: slide-left 35s linear infinite;
 
-            p {
-                font-size: 8vh;
-                padding-left: 3vh;
-            }
+      p {
+        font-size: 8vh;
+        padding-left: 3vh;
+      }
 
-            @keyframes slide-left {
-                from {
-                    -webkit-transform: translateX(0);
-                            transform: translateX(0);
-                }
-
-                to {
-                    -webkit-transform: translateX(-100%);
-                            transform: translateX(-100%);
-                }
-            }
+      @keyframes slide-left {
+        from {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
         }
+
+        to {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+      }
     }
   }
+}

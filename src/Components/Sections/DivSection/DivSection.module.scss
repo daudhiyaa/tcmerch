@@ -58,10 +58,10 @@
   }
 
   .productCards {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, auto));
+    justify-content: center;
+    gap: 15px;
   }
 
   @media screen and (max-width: 1000px) {

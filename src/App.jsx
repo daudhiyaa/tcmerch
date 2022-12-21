@@ -19,7 +19,7 @@ function App() {
     <div className={styles.App}>
       <Header />
       <Home />
-      {/* <Category arrayOfCategory={categoryData} /> */}
+      <Category arrayOfCategory={categoryData} />
       <DivSection categorySection={newestProductData} />
       <DivSection />
       {/* To-do: integrate json data to featured product section */}

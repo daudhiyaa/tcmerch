@@ -6,9 +6,9 @@ import { UilAngleDoubleRight } from "@iconscout/react-unicons";
 function DivSection(props) {
   const { categorySection } = props;
   const left_title =
-    categorySection === undefined ? "Featured" : categorySection.leftTitle;
+    categorySection === undefined ? "FEATURED" : categorySection.leftTitle;
   const right_title =
-    categorySection === undefined ? "Products" : categorySection.rightTitle;
+    categorySection === undefined ? "PRODUCTS" : categorySection.rightTitle;
   const description =
     categorySection === undefined
       ? "Featured products description"

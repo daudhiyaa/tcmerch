@@ -2,86 +2,85 @@
 @import "../../../Palette/Palette.scss";
 
 .home {
-    width: 100vw;
-    height: 100vh;
-    background-color: $brown-light;
-    padding-top: 10vh;
-    position: relative;
+  min-height: 100vh;
+  background-color: $brown-light;
+  padding-top: 10vh;
+  position: relative;
 
+  h1 {
+    position: relative;
+    z-index: 2;
+    margin-left: 4vw;
+    width: fit-content;
+    color: $black;
+    font-family: "Archivo-expanded-extrabold";
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  h2 {
+    position: relative;
+    z-index: 2;
+    margin-left: 4vw;
+    width: fit-content;
+    color: $white;
+    font-family: "Archivo-expanded-extrabold";
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  h3 {
+    margin-left: 4.5vw;
+    padding-top: 10vh;
+    width: fit-content;
+    color: $black;
+    font-family: "Archivo-expanded";
+    font-size: 1vw;
+  }
+
+  img {
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 43vw;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
     h1 {
-        position: relative;
-        z-index: 2;
-        margin-left: 4vw;
-        width: fit-content;
-        color: $black;
-        font-family: 'Archivo-expanded-extrabold';
-        font-size: 8vw;
-        line-height: 8vw;
+      margin-left: 4.5vw;
+      width: fit-content;
+      color: $black;
+      font-family: "Archivo-expanded-extrabold";
+      font-size: 10vw;
+      line-height: 10vw;
     }
 
     h2 {
-        position: relative;
-        z-index: 2;
-        margin-left: 4vw;
-        width: fit-content;
-        color: $white;
-        font-family: 'Archivo-expanded-extrabold';
-        font-size: 8vw;
-        line-height: 8vw;
+      margin-left: 4.5vw;
+      width: fit-content;
+      color: $white;
+      font-family: "Archivo-expanded-extrabold";
+      font-size: 10vw;
+      line-height: 10vw;
     }
 
     h3 {
-        margin-left: 4.5vw;
-        padding-top: 10vh;
-        width: fit-content;
-        color: $black;
-        font-family: 'Archivo-expanded';
-        font-size: 1vw;
+      margin-left: 4.5vw;
+      padding-top: 7vh;
+      width: fit-content;
+      color: $black;
+      font-family: "Archivo-expanded-extrabold";
+      font-size: 3vw;
     }
 
     img {
-        position: absolute;
-        opacity: 0.9;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 43vw;
-        object-fit: cover;
+      margin-top: 10vh;
+      position: relative;
+      width: 98vw;
+      height: 40vh;
     }
-
-    @media screen and (max-width: 768px) {
-        h1 {
-            margin-left: 4.5vw;
-            width: fit-content;
-            color: $black;
-            font-family: 'Archivo-expanded-extrabold';
-            font-size: 10vw;
-            line-height: 10vw;
-        }
-
-        h2 {
-            margin-left: 4.5vw;
-            width: fit-content;
-            color: $white;
-            font-family: 'Archivo-expanded-extrabold';
-            font-size: 10vw;
-            line-height: 10vw;
-        }
-
-        h3 {
-            margin-left: 4.5vw;
-            padding-top: 7vh;
-            width: fit-content;
-            color: $black;
-            font-family: 'Archivo-expanded-extrabold';
-            font-size: 3vw;
-        }
-
-        img {
-            margin-top: 10vh;
-            position: relative;
-            width: 100vw;
-            height: 40vh;
-        }
-    }
+  }
 }

@@ -2,20 +2,18 @@
 @import "../../../Font/Font.scss";
 
 #CategorySection {
-  width: 100vw;
-  position: relative;
+  box-sizing: border-box;
   display: flex;
+  justify-content: center;
   min-height: 100vh;
   background-color: $brown-light;
-  padding-top: 25vh;
-  padding: 20px;
-  display: flex;
-  height: 120vh;
 
   .card {
+    // position: absolute;
     display: flex;
-    position: relative;
-    width: 17vw;
+    // background: purple;
+    justify-content: center;
+    padding: 20px;
   }
 }
 
@@ -23,5 +21,5 @@
   #CategorySection {
     flex-direction: column;
     gap: 10px;
-}
+  }
 }

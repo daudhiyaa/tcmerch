@@ -1,53 +1,55 @@
 @import "../../../Font/Font.scss";
 @import "../../../Palette/Palette.scss";
 
+@mixin setTextPos($fontFamily, $textAlign, $position) {
+  font-family: $fontFamily;
+  text-align: $textAlign;
+  position: $position;
+}
+
+@mixin setTextStyle($color, $sizeFont) {
+  color: $color;
+  font-size: $sizeFont;
+}
+
+@mixin setDisplayText($displayText, $textWidth, $textWeight, $textDecoration) {
+  display: $displayText;
+  width: $textWidth;
+  font-weight: $textWeight;
+  text-decoration: $textDecoration;
+}
+
 .DivSection {
   background-color: $brown-light;
 
   .left_aligned {
-    font-family: "Archivo-expanded-extrabold";
-    text-transform: uppercase;
-    text-align: left;
-    position: relative;
-    color: $black;
-    font-size: 8rem;
+    @include setTextPos("Archivo-expanded-extrabold", left, relative);
+    @include setTextStyle($black, 8rem);
     margin-left: 4vw;
     padding-top: 9vh;
   }
 
   .right_aligned {
-    font-family: "Archivo-expanded-extrabold";
-    text-align: right;
-    text-transform: uppercase;
-    position: relative;
-    color: $white;
-    font-size: 8rem;
+    @include setTextPos("Archivo-expanded-extrabold", right, relative);
+    @include setTextStyle($white, 8rem);
     margin-right: 4vw;
   }
 
   .description_holder {
-    font-family: "Archivo-expanded";
-    text-align: justify;
-    width: 50vw;
-    position: relative;
-    display: flex;
+    @include setTextPos("Archivo-expanded", justify, relative);
+    @include setTextStyle($black, 1.3rem);
+    @include setDisplayText(flex, 70vw, normal, none);
+
     margin-left: 4.5vw;
-    color: $black;
-    font-size: 1.3rem;
-    line-height: 2rem;
     padding-bottom: 9vh;
+    line-height: 2rem;
   }
 
   .arrow {
-    font-family: "Archivo-expanded";
-    width: fit-content;
-    position: relative;
-    display: flex;
-    color: $black;
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-decoration: none;
-    text-align: right;
+    @include setTextPos("Archivo-expanded", right, relative);
+    @include setTextStyle($black, 1.1rem);
+    @include setDisplayText(flex, fit-content, 600, none);
+
     margin-left: auto;
     padding-top: 2vh;
     padding-right: 5vw;
@@ -65,7 +67,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, auto));
     justify-content: space-between;
-    // justify-content: center;
     gap: 20px;
     padding-inline: 4.5vw;
   }
@@ -94,19 +95,13 @@
     }
 
     .arrow_bottom {
-      width: fit-content;
-      position: relative;
-      display: flex;
-      font-family: "Archivo-expanded";
-      color: $black;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-decoration: none;
-      text-align: right;
+      @include setTextPos("Archivo-expanded", right, relative);
+      @include setTextStyle($black, 0.9rem);
+      @include setDisplayText(flex, fit-content, 600, none);
+
       margin-left: auto;
       padding: 2vh 4vw 2vh 0;
       cursor: pointer;
-
       &:hover {
         color: $brown;
       }

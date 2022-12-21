@@ -23,8 +23,8 @@
   ],
 
   "newestProducts": {
-    "leftTitle": "Newest",
-    "rightTitle": "Products",
+    "leftTitle": "NEWEST",
+    "rightTitle": "PRODUCTS",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed volutpat sodales. Quis at mi amet, ipsum",
     "contents": [
       {
@@ -61,8 +61,8 @@
   },
 
   "featuredProducts": {
-    "leftTitle": "Featured",
-    "rightTitle": "Products",
+    "leftTitle": "FEATURED",
+    "rightTitle": "PRODUCTS",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed volutpat sodales. Quis at mi amet, ipsum",
     "contents": [
       {

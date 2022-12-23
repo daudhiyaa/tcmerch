@@ -8,6 +8,17 @@
   height: 30rem;
   background-color: $white;
   border-radius: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+
+    .price {
+      h1 {
+        color: $brown;
+      }
+    }
+  }
 
   img {
     position: absolute;
@@ -40,9 +51,10 @@
       }
 
       h2 {
-        font-family: "CreatoDisplay";
+        font-family: "Cutive Mono";
         font-size: 1rem;
         color: $gray-400;
+        margin-top: 5px;
       }
     }
 

@@ -1,6 +1,19 @@
 @import "../../../Font/Font.scss";
 @import "../../../Palette/Palette.scss";
 
+@mixin setTextSize($sizeFont, $lineHeight, $leftMargin) {
+  font-size: $sizeFont;
+  line-height: $lineHeight;
+  margin-left: $leftMargin;
+}
+
+@mixin setTextStyle($color, $width: fit-content, $zIndex, $fontFamily) {
+  color: $color;
+  width: $width;
+  z-index: $zIndex;
+  font-family: $fontFamily;
+}
+
 .home {
   min-height: 100vh;
   background-color: $brown-light;
@@ -9,33 +22,20 @@
 
   h1 {
     position: relative;
-    z-index: 2;
-    margin-left: 4vw;
-    width: fit-content;
-    color: $black;
-    font-family: "Archivo-expanded-extrabold";
-    font-size: 8vw;
-    line-height: 8vw;
+    @include setTextStyle($black, fit-content, 2, "Archivo-expanded-extrabold");
+    @include setTextSize(8vw, 8vw, 4vw);
   }
 
   h2 {
     position: relative;
-    z-index: 2;
-    margin-left: 4vw;
-    width: fit-content;
-    color: $white;
-    font-family: "Archivo-expanded-extrabold";
-    font-size: 8vw;
-    line-height: 8vw;
+    @include setTextStyle($white, fit-content, 2, "Archivo-expanded-extrabold");
+    @include setTextSize(8vw, 8vw, 4vw);
   }
 
   h3 {
-    margin-left: 4.5vw;
     padding-top: 10vh;
-    width: fit-content;
-    color: $black;
-    font-family: "Archivo-expanded";
-    font-size: 1vw;
+    @include setTextStyle($black, fit-content, 2, "Archivo-expanded");
+    @include setTextSize(2vw, none, 4.5vw);
   }
 
   img {
@@ -50,36 +50,22 @@
 
   @media screen and (max-width: 768px) {
     h1 {
-      margin-left: 4.5vw;
-      width: fit-content;
-      color: $black;
-      font-family: "Archivo-expanded-extrabold";
-      font-size: 10vw;
-      line-height: 10vw;
+      @include setTextSize(10vw, 10vw, 4.5vw);
     }
 
     h2 {
-      margin-left: 4.5vw;
-      width: fit-content;
-      color: $white;
-      font-family: "Archivo-expanded-extrabold";
-      font-size: 10vw;
-      line-height: 10vw;
+      @include setTextSize(10vw, 10vw, 4.5vw);
     }
 
     h3 {
-      margin-left: 4.5vw;
+      @include setTextSize(3vw, none, 4.5vw);
       padding-top: 7vh;
-      width: fit-content;
-      color: $black;
-      font-family: "Archivo-expanded-extrabold";
-      font-size: 3vw;
     }
 
     img {
       margin-top: 10vh;
       position: relative;
-      width: 98vw;
+      width: 100%;
       height: 40vh;
     }
   }

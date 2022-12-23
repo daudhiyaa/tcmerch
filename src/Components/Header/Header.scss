@@ -11,18 +11,19 @@
   padding: 0;
   background-color: $white;
   color: $black;
+  padding-inline: 4.5vw;
 
   .title {
     text-decoration: none;
-    margin-left: 3rem;
     font-size: 3vh;
     font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
   }
 
   .navmenu {
     font-family: "Monument";
     margin-left: auto;
-    // margin-right: 5rem;
     font-size: 1.8vh;
     transition: all 0.5s ease;
 
@@ -32,9 +33,10 @@
       justify-content: flex-end;
       padding: 0;
       li {
+        text-align: center;
         cursor: pointer;
         list-style-type: none;
-        margin: 1.5rem;
+        margin-left: 2rem;
         transition: all 0.3s ease;
         &:hover {
           color: $brown;
@@ -48,7 +50,7 @@
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 850px) {
       transition: all 0.5s ease;
       ul {
         display: none;
@@ -77,9 +79,16 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  .expanded {
+    ul {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
     .expanded {
       transition: all 0.5s ease;
+      z-index: 10;
 
       ul {
         display: block;
@@ -93,6 +102,7 @@
       }
 
       li {
+        cursor: pointer;
         font-family: "Monument";
         font-size: 1rem;
         list-style-type: none;
@@ -140,7 +150,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 850px) {
     .hamburger {
       display: flex;
       justify-content: center;

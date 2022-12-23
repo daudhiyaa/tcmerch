@@ -5,13 +5,11 @@ function CategorySection(props) {
   const { arrayOfCategory } = props;
 
   return (
-    <section id={styles.CategorySection}>
+    <section class={styles.categorySection}>
       {Array(5)
         .fill(null)
         .map((_, i) => (
-          <div className={styles.card}>
-            <CategoryCard cardsData={arrayOfCategory.slice(i * 1, i + 1)} />
-          </div>
+          <CategoryCard cardsData={arrayOfCategory.slice(i * 1, i + 1)} />
         ))}
     </section>
   );

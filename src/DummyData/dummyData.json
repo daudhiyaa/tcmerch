@@ -23,8 +23,8 @@
   ],
 
   "newestProducts": {
-    "leftTitle": "Newest",
-    "rightTitle": "Products",
+    "leftTitle": "NEWEST",
+    "rightTitle": "PRODUCTS",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed volutpat sodales. Quis at mi amet, ipsum",
     "contents": [
       {
@@ -61,8 +61,8 @@
   },
 
   "featuredProducts": {
-    "leftTitle": "Featured",
-    "rightTitle": "Products",
+    "leftTitle": "FEATURED",
+    "rightTitle": "PRODUCTS",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta feugiat etiam aliquet aliquet tellus vel. Et maecenas id bibendum sit. Augue nulla tortor faucibus nunc. Urna massa mattis faucibus velit sed volutpat sodales. Quis at mi amet, ipsum",
     "contents": [
       {
@@ -125,11 +125,11 @@
     },
     {
       "title": "Credits",
-      "text1": "Text 1",
-      "text2": "Text 2",
-      "text3": "Text 3",
-      "text4": "Text 4",
-      "text5": "Text 5"
+      "text1": "HANUN SHAKA",
+      "text2": "DAUD DHIYA'",
+      "text3": "",
+      "text4": "",
+      "text5": ""
     }
   ]
 }

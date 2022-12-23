@@ -1,25 +1,19 @@
 @import "../../../Palette/Palette.scss";
 @import "../../../Font/Font.scss";
 
-#CategorySection {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
+.categorySection {
   min-height: 100vh;
-  background-color: $brown-light;
-
-  .card {
-    // position: absolute;
-    display: flex;
-    // background: purple;
-    justify-content: center;
-    padding: 20px;
-  }
+  background: $brown-light;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vw;
+  gap: 15px;
 }
 
 @media screen and (max-width: 790px) {
-  #CategorySection {
+  .categorySection {
     flex-direction: column;
-    gap: 10px;
   }
 }

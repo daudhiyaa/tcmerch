@@ -1,41 +1,35 @@
 @import "../../../Font/Font.scss";
 @import "../../../Palette/Palette.scss";
 
-.CategoryCard {
+.categoryCard {
   position: relative;
-  top: 0;
-  z-index: 1;
-  font-family: "Monument";
-  font-weight: 100;
-  font-size: 30px;
-  writing-mode: vertical-lr;
-  text-decoration: none;
   display: flex;
-  width: fit-content;
+  width: 15vw;
+  height: 90vh;
+  text-decoration: none;
 
-  color: $white;
   filter: grayscale(1) brightness(90%);
   transition: 0.5s;
   cursor: pointer;
 
   img {
-    top: 0;
-    right: 0;
-    z-index: 2;
-    position: absolute;
-    height: 90vh;
-    width: 15vw;
-    object-fit: cover;
     border-radius: 0.5rem;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
   }
 
   p {
-    width: fit-content;
-    height: inherit;
-    right: 1rem;
-    bottom: -85vh;
+    color: $white;
+    writing-mode: vertical-lr;
+    font-family: "Monument";
+    font-weight: 100;
+    font-size: 30px;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    z-index: 3;
+    padding: 20px 10px;
   }
 
   &:hover {
@@ -43,26 +37,21 @@
   }
 }
 
-@media screen and (max-width: 1150px) {
-  .CategoryCard {
-    width: 13vw;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .CategoryCard {
-    width: 12vw;
-  }
-}
-
 @media screen and (max-width: 790px) {
-  .CategoryCard {
-    align-items: flex-end;
-    padding: 10px 20px;
-    max-width: 100%;
-    width: auto;
+  .categoryCard {
     height: 19vh;
-    writing-mode: horizontal-tb;
-    font-size: 22px;
+    width: 90vw;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 19vh;
+      object-position: center;
+    }
+    p {
+      padding: 10px 20px;
+      writing-mode: horizontal-tb;
+      font-size: 22px;
+    }
   }
 }

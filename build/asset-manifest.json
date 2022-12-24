@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5092f7d9.css",
+    "main.js": "/static/js/main.6c5a1937.js",
+    "static/js/787.2e461eb7.chunk.js": "/static/js/787.2e461eb7.chunk.js",
+    "static/media/floralshirt1.jpg": "/static/media/floralshirt1.d217aca4ba04be0c484d.jpg",
+    "static/media/redsweatshirt1.jpg": "/static/media/redsweatshirt1.fa26d1de2321af851932.jpg",
+    "static/media/floralshirt2.jpg": "/static/media/floralshirt2.b52d9619fb0af6a30844.jpg",
+    "static/media/flanelshirt1.jpg": "/static/media/flanelshirt1.e8dc29785ed1278bfe0b.jpg",
+    "static/media/yellowhoodie1.jpg": "/static/media/yellowhoodie1.285fffdfc59a56a9b0bf.jpg",
+    "static/media/yellowhoodie2.jpg": "/static/media/yellowhoodie2.f0b24e1e70ff4046daf7.jpg",
+    "static/media/whitesweatshirt2.jpg": "/static/media/whitesweatshirt2.bb61b6378e48c70a7f52.jpg",
+    "static/media/whitehoodie2.jpg": "/static/media/whitehoodie2.7408f7749ed2b8916fe6.jpg",
+    "static/media/graphictshirt2.jpg": "/static/media/graphictshirt2.5061860871e0f233e182.jpg",
+    "static/media/basictshirt1.jpg": "/static/media/basictshirt1.9692b2067295aaedff18.jpg",
+    "static/media/whitesweatshirt1.jpg": "/static/media/whitesweatshirt1.62e2b6abe269dadf34df.jpg",
+    "static/media/redsweatshirt2.jpg": "/static/media/redsweatshirt2.270a442930dfe2569ea7.jpg",
+    "static/media/denimjacket1.jpg": "/static/media/denimjacket1.67956398ac1d2f54883e.jpg",
+    "static/media/denimjacket2.jpg": "/static/media/denimjacket2.8f242c1b39bade253d3a.jpg",
+    "static/media/whitehoodie1.jpg": "/static/media/whitehoodie1.7980c35962abf9f8cf09.jpg",
+    "static/media/basictshirt2.jpg": "/static/media/basictshirt2.75050b86ed791861ba9c.jpg",
+    "static/media/flanelshirt2.jpg": "/static/media/flanelshirt2.6b25c6d6d7e5575c3f2e.jpg",
+    "static/media/leatherjacket1.jpg": "/static/media/leatherjacket1.b5c76d3d7b7758af74c9.jpg",
+    "static/media/graphictshirt1.jpg": "/static/media/graphictshirt1.d899570b4b57b518af02.jpg",
+    "static/media/leatherjacket2.jpg": "/static/media/leatherjacket2.d5200de72b1fccfd5465.jpg",
+    "static/media/Archivo_Expanded-Regular.ttf": "/static/media/Archivo_Expanded-Regular.3c62c68588e6d20983f5.ttf",
+    "static/media/Archivo_Expanded-ExtraBold.ttf": "/static/media/Archivo_Expanded-ExtraBold.bee92b62d8b48da0ac61.ttf",
+    "static/media/CreatoDisplay-Regular.otf": "/static/media/CreatoDisplay-Regular.6d28723c4e0b525a515f.otf",
+    "static/media/MonumentExtended-Regular.otf": "/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
+    "static/media/MonumentExtended-Ultrabold.otf": "/static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
+    "static/media/AkiraExpandedDemo.otf": "/static/media/AkiraExpandedDemo.5198553380d9bb727554.otf",
+    "static/media/cartcolor.png": "/static/media/cartcolor.427f0fe88453c51d151d.png",
+    "static/media/cart.png": "/static/media/cart.bff8e165b501d8148c0e.png",
+    "index.html": "/index.html",
+    "main.5092f7d9.css.map": "/static/css/main.5092f7d9.css.map",
+    "main.6c5a1937.js.map": "/static/js/main.6c5a1937.js.map",
+    "787.2e461eb7.chunk.js.map": "/static/js/787.2e461eb7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5092f7d9.css",
+    "static/js/main.6c5a1937.js"
+  ]
+}

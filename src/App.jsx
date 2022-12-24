@@ -17,14 +17,14 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <Header />
-      <Home />
-      <Category arrayOfCategory={categoryData} />
+      {/* <Header /> */}
+      {/* <Home /> */}
+      {/* <Category arrayOfCategory={categoryData} /> */}
       <DivSection categorySection={newestProductData} />
-      <DivSection />
+      <DivSection categorySection={featuredProductData} />
       {/* To-do: integrate json data to featured product section */}
-      <Contact />
-      <SlidingText />
+      {/* <Contact /> */}
+      {/* <SlidingText /> */}
       <Footer arrayOfFooter={footerCardData} />
     </div>
   );

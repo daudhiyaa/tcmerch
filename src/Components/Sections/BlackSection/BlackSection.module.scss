@@ -1,0 +1,110 @@
+@import "../../../Palette/Palette.scss";
+@import "../../../Font/Font.scss";
+
+@mixin setJustifyAndAlign($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin setFontStyle($sizeFont, $fontFam) {
+  font-size: $sizeFont;
+  font-family: $fontFam;
+}
+
+.blackSection {
+  min-height: 100vh;
+  background-color: $black;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left-side right-side";
+
+  .leftSide {
+    @include setJustifyAndAlign(center, center);
+    grid-area: left-side;
+    padding: 0 4.5vw;
+
+    .circle {
+      @include setJustifyAndAlign(center, center);
+      position: relative;
+      padding: 30px;
+      border-radius: 50%;
+      color: $white;
+
+      .logo {
+        @include setFontStyle(100px, "Archivo-expanded");
+        position: relative;
+        border-radius: 50%;
+      }
+
+      .text {
+        position: relative;
+        left: 50%;
+        transform-origin: 0 125px;
+        animation: rotateText 5s linear infinite;
+      }
+    }
+  }
+
+  .rightSide {
+    grid-area: right-side;
+    @include setJustifyAndAlign(center, 0);
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4.5vw;
+
+    p {
+      @include setFontStyle(65px, "Archivo-expanded");
+      color: $white;
+    }
+
+    a {
+      width: fit-content;
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        @include setFontStyle(14px, "Archivo-expanded");
+        font-weight: bold;
+        padding: 25px 40px;
+        background-color: $white;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        button {
+          background-color: rgb(232, 228, 228);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.45fr 0.65fr;
+    grid-template-areas:
+      "left-side"
+      "right-side";
+
+    .leftSide {
+      @include setJustifyAndAlign(flex-start, flex-end);
+    }
+
+    .rightSide {
+      justify-content: flex-start;
+      p {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

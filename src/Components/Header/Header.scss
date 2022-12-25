@@ -55,13 +55,63 @@
     display: none;
   }
 
+  .navmenuexpanded {
+    z-index: 3;
+
+    ul {
+      display: block;
+      position: absolute;
+      top: 6vh;
+      right: 0;
+      flex-direction: column;
+      width: 100vw;
+      background-color: white;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    li {
+      cursor: pointer;
+      font-family: "Monument";
+      font-size: 0.8rem;
+      list-style-type: none;
+      margin: 10vw;
+      &:hover {
+        color: $brown;
+      }
+
+      a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
   .hamburgerhidden {
     display: none;
   }
 
   .hamburgershown {
-    display: flex;
+    border: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.45rem;
+    border-radius: 50%;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    
+    z-index: 4;
     position: absolute;
+    top: 50%;
     right: 5vw;
+    transform: translateY(-50%);
+
+    &:hover {
+      background-color: $brown;
+    }
   }
 }

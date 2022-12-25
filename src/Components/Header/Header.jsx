@@ -5,25 +5,23 @@ import "./Header.scss";
 function Header() {
   const [isExpanded, setExpanded] = useState(false);
   const [viewportWidth, setWidth] = useState(window.visualViewport.width);
-  const [height, setHeight] = useState(window.visualViewport.height);
 
   window.addEventListener('resize',(e)=>{
     setWidth(e.target.visualViewport.width);
-    setHeight(e.target.visualViewport.height);
     
-    if (viewportWidth > 850) {
+    if (viewportWidth > 768) {
       setExpanded(false);
     }
   });
 
   const getClassnameNavmenu = () => {
-    if (viewportWidth > 850) {
+    if (viewportWidth > 768) {
       return 'navmenu';
     } else {
       if (!isExpanded) {
         return 'navmenuhidden';
       } else {
-        return 'navmenuExpanded';
+        return 'navmenuexpanded';
       }
     }
   }
@@ -41,9 +39,9 @@ function Header() {
         </ul>
       </div>
       <div
-      className={`hamburger${viewportWidth > 850 ? "hidden" : "shown"}`}
+      className={`hamburger${viewportWidth > 768 ? "hidden" : "shown"}`}
       onClick={() => {
-        setExpanded(true);
+        setExpanded(!isExpanded);
       }}
       >
         <UilBars />

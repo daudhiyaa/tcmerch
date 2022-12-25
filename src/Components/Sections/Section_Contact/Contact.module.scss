@@ -6,18 +6,11 @@
   height: $height;
 }
 
-@mixin setImageStyle(
-  $position: absolute,
-  $objectFit: cover,
-  $width,
-  $height,
-  $marginTop,
-  $marginLeft
-) {
-  position: $position;
+@mixin setImageStyle($post, $objectFit, $width, $height, $mrgnTop, $mrgnLeft) {
+  position: $post;
   object-fit: $objectFit;
   @include setWidthHeight($width, $height);
-  margin: $marginTop 0 0 $marginLeft;
+  margin: $mrgnTop 0 0 $mrgnLeft;
 }
 
 .contact {

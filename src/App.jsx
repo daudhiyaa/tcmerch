@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Sections/Section_Home/Home";
 import Category from "./Components/Sections/CategorySection/CategorySection";
 import DivSection from "./Components/Sections/DivSection/DivSection";
+import BlackSection from "./Components/Sections/BlackSection/BlackSection";
 import Contact from "./Components/Sections/Section_Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import SlidingText from "./Components/SlidingText/SlidingText";
@@ -21,8 +22,8 @@ function App() {
       <Home />
       <Category arrayOfCategory={categoryData} />
       <DivSection categorySection={newestProductData} />
+      <BlackSection />
       <DivSection categorySection={featuredProductData} />
-      {/* To-do: integrate json data to featured product section */}
       <Contact />
       <SlidingText />
       <Footer arrayOfFooter={footerCardData} />

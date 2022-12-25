@@ -51,7 +51,17 @@
     }
   }
 
-  .navmenushrunk {
+  .navmenuhidden {
     display: none;
+  }
+
+  .hamburgerhidden {
+    display: none;
+  }
+
+  .hamburgershown {
+    display: flex;
+    position: absolute;
+    right: 5vw;
   }
 }

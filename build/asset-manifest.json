@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5092f7d9.css",
-    "main.js": "/static/js/main.6c5a1937.js",
+    "main.css": "/static/css/main.cdd6f20a.css",
+    "main.js": "/static/js/main.40f78a5c.js",
     "static/js/787.2e461eb7.chunk.js": "/static/js/787.2e461eb7.chunk.js",
     "static/media/floralshirt1.jpg": "/static/media/floralshirt1.d217aca4ba04be0c484d.jpg",
     "static/media/redsweatshirt1.jpg": "/static/media/redsweatshirt1.fa26d1de2321af851932.jpg",
@@ -32,12 +32,12 @@
     "static/media/cartcolor.png": "/static/media/cartcolor.427f0fe88453c51d151d.png",
     "static/media/cart.png": "/static/media/cart.bff8e165b501d8148c0e.png",
     "index.html": "/index.html",
-    "main.5092f7d9.css.map": "/static/css/main.5092f7d9.css.map",
-    "main.6c5a1937.js.map": "/static/js/main.6c5a1937.js.map",
+    "main.cdd6f20a.css.map": "/static/css/main.cdd6f20a.css.map",
+    "main.40f78a5c.js.map": "/static/js/main.40f78a5c.js.map",
     "787.2e461eb7.chunk.js.map": "/static/js/787.2e461eb7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5092f7d9.css",
-    "static/js/main.6c5a1937.js"
+    "static/css/main.cdd6f20a.css",
+    "static/js/main.40f78a5c.js"
   ]
 }

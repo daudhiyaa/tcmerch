@@ -5,7 +5,7 @@ function CategorySection(props) {
   const { arrayOfCategory } = props;
 
   return (
-    <section class={styles.categorySection}>
+    <section className={styles.categorySection}>
       {Array(5)
         .fill(null)
         .map((_, i) => (

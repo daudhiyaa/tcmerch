@@ -10,9 +10,9 @@
 
   filter: grayscale(1) brightness(90%);
   transition: 0.5s;
-  cursor: pointer;
 
   img {
+    cursor: pointer;
     border-radius: 0.5rem;
     position: absolute;
     width: 100%;
@@ -21,6 +21,7 @@
   }
 
   p {
+    cursor: pointer;
     color: $white;
     writing-mode: vertical-lr;
     font-family: "Monument";

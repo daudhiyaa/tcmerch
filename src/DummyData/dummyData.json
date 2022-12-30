@@ -105,7 +105,13 @@
       "text2": "Sweatshirts",
       "text3": "Shirts",
       "text4": "T-Shirts",
-      "text5": "Jackets"
+      "text5": "Jackets",
+
+      "link1": "#",
+      "link2": "#",
+      "link3": "#",
+      "link4": "#",
+      "link5": "#"
     },
     {
       "title": "Company",
@@ -113,7 +119,13 @@
       "text2": "Blog",
       "text3": "Contact",
       "text4": "Guarantee",
-      "text5": "Shipping"
+      "text5": "Shipping",
+
+      "link1": "#",
+      "link2": "#",
+      "link3": "#",
+      "link4": "#",
+      "link5": "#"
     },
     {
       "title": "Support",
@@ -121,7 +133,13 @@
       "text2": "Licensing",
       "text3": " log",
       "text4": "Instructions",
-      "text5": ""
+      "text5": "",
+
+      "link1": "#",
+      "link2": "#",
+      "link3": "#",
+      "link4": "#",
+      "link5": "#"
     },
     {
       "title": "Credits",
@@ -129,7 +147,13 @@
       "text2": "DAUD DHIYA'",
       "text3": "",
       "text4": "",
-      "text5": ""
+      "text5": "",
+
+      "link1": "https://github.com/borednuna",
+      "link2": "https://github.com/daudhiyaa",
+      "link3": "#",
+      "link4": "#",
+      "link5": "#"
     }
   ]
 }

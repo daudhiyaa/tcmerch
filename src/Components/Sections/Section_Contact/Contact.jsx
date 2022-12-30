@@ -61,7 +61,7 @@ const EmailField = styled(TextField)({
     },
     "&:hover fieldset": {
       color: "#bf8c4e",
-      borderColor: "#888888",
+      borderColor: "#bf8c4e",
       backgroundColor: "#222",
     },
     "&.Mui-focused fieldset": {

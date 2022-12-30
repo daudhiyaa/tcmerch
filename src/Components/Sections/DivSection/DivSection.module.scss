@@ -21,6 +21,7 @@
 
 .DivSection {
   background-color: $brown-light;
+  padding-bottom: 3em;
 
   .left_aligned {
     @include setTextPos("Archivo-expanded-extrabold", left, relative);
@@ -66,7 +67,7 @@
   .productCards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, auto));
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     padding-inline: 4.5vw;
   }

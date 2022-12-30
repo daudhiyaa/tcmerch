@@ -6,12 +6,10 @@ function CategoryCard(props) {
   const image = cardsData[0].background;
 
   return (
-    <div className={styles.categoryCard}>
-      <a href="">
-        <img src={require("../../../Assets/" + image)} alt=""></img>
-        <p>{title}</p>
-      </a>
-    </div>
+    <a href="" className={styles.categoryCard}>
+      <img src={require("../../../Assets/" + image)} alt=""></img>
+      <p>{title}</p>
+    </a>
   );
 }
 

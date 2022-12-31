@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d04a1ef3.css",
-    "main.js": "/static/js/main.510201d9.js",
+    "main.css": "/static/css/main.8568e5df.css",
+    "main.js": "/static/js/main.2878f74c.js",
     "static/js/787.2e461eb7.chunk.js": "/static/js/787.2e461eb7.chunk.js",
     "static/media/floralshirt1.jpg": "/static/media/floralshirt1.d217aca4ba04be0c484d.jpg",
     "static/media/redsweatshirt1.jpg": "/static/media/redsweatshirt1.fa26d1de2321af851932.jpg",
@@ -29,15 +29,16 @@
     "static/media/MonumentExtended-Regular.otf": "/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
     "static/media/MonumentExtended-Ultrabold.otf": "/static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
     "static/media/AkiraExpandedDemo.otf": "/static/media/AkiraExpandedDemo.5198553380d9bb727554.otf",
+    "static/media/sale.png": "/static/media/sale.114d5ce666c8742e9ac2.png",
     "static/media/cartcolor.png": "/static/media/cartcolor.427f0fe88453c51d151d.png",
     "static/media/cart.png": "/static/media/cart.bff8e165b501d8148c0e.png",
     "index.html": "/index.html",
-    "main.d04a1ef3.css.map": "/static/css/main.d04a1ef3.css.map",
-    "main.510201d9.js.map": "/static/js/main.510201d9.js.map",
+    "main.8568e5df.css.map": "/static/css/main.8568e5df.css.map",
+    "main.2878f74c.js.map": "/static/js/main.2878f74c.js.map",
     "787.2e461eb7.chunk.js.map": "/static/js/787.2e461eb7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d04a1ef3.css",
-    "static/js/main.510201d9.js"
+    "static/css/main.8568e5df.css",
+    "static/js/main.2878f74c.js"
   ]
 }

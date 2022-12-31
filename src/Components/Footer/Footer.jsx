@@ -12,7 +12,6 @@ function Footer(props) {
 
   return (
     <footer className="footer">
-      <div className="footer__divider"></div>
       <div className="footer__content">
         <div className="footer__img">
           <a href="" className="logo">
@@ -36,16 +35,16 @@ function Footer(props) {
           <div className="underLine">
             <h5>© 2022 TCMerch. All rights reserved.</h5>
             <div className="listSosmed">
-              <a href="">
+              <a href="#">
                 <UilFacebook />
               </a>
-              <a href="">
+              <a href="#">
                 <UilTwitter />
               </a>
-              <a href="">
+              <a href="#">
                 <UilInstagram />
               </a>
-              <a href="">
+              <a href="#">
                 <UilYoutube />
               </a>
             </div>

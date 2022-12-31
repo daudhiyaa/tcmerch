@@ -22,27 +22,27 @@ function FooterCard(props) {
       <ul>
         <li>
           <a target="_blank" href={link1}>
-            {text1}
+            <span>{text1}</span>
           </a>
         </li>
         <li>
           <a target="_blank" href={link2}>
-            {text2}
+            <span>{text2}</span>
           </a>
         </li>
         <li>
           <a target="_blank" href={link3}>
-            {text3}
+            <span>{text3}</span>
           </a>
         </li>
         <li>
           <a target="_blank" href={link4}>
-            {text4}
+            <span>{text4}</span>
           </a>
         </li>
         <li>
           <a target="_blank" href={link5}>
-            {text5}
+            <span>{text5}</span>
           </a>
         </li>
       </ul>

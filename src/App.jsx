@@ -9,7 +9,7 @@ import Contact from "./Components/Sections/Section_Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import SlidingText from "./Components/SlidingText/SlidingText";
 import DummyData from "./DummyData/dummyData.json";
-import AnimatedCursor from "react-animated-cursor";
+import AnimCursor from "./Components/AnimCursor/AnimCursor";
 
 function App() {
   const categoryData = DummyData.categorySection;
@@ -19,28 +19,7 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <AnimatedCursor
-        innerSize={0}
-        outerSize={120}
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={1}
-        // trailingSpeed={0.1}
-        outerStyle={{
-          backgroundColor: "#bf8c4e",
-          filter: "blur(45px)",
-        }}
-        clickables={[
-          "a",
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          ".link",
-        ]}
-      />
+      <AnimCursor />
       <Header />
       <Home />
       <Category arrayOfCategory={categoryData} />

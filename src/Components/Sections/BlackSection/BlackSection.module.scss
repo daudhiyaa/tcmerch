@@ -27,22 +27,17 @@
 
     .circle {
       @include setJustifyAndAlign(center, center);
+      @include setFontStyle(100px, "Archivo-expanded");
       position: relative;
-      padding: 30px;
+      padding: 50px;
       border-radius: 50%;
       color: $white;
 
-      .logo {
-        @include setFontStyle(100px, "Archivo-expanded");
-        position: relative;
-        border-radius: 50%;
-      }
-
-      .text {
-        position: relative;
-        left: 50%;
-        transform-origin: 0 125px;
-        animation: rotateText 5s linear infinite;
+      img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        animation: rotateText 11s linear infinite;
       }
     }
   }
@@ -102,7 +97,7 @@
 
 @keyframes rotateText {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(0deg);

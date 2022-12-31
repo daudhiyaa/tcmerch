@@ -32,20 +32,27 @@
       align-items: center;
       justify-content: flex-end;
       padding: 0;
+
       li {
         text-align: center;
         cursor: pointer;
         list-style-type: none;
         margin-left: 2rem;
         transition: all 0.3s ease;
-        &:hover {
-          color: $brown;
-        }
 
         a {
           text-decoration: none;
           display: block;
           width: 100%;
+
+          span {
+            color: $black;
+            cursor: pointer;
+
+            &:hover {
+              color: $brown;
+            }
+          }
         }
       }
     }
@@ -64,26 +71,32 @@
       top: 6vh;
       right: 0;
       flex-direction: column;
-      width: 100vw;
+      width: 100%;
       background-color: white;
       text-align: center;
       transition: all 0.3s ease;
-    }
 
-    li {
-      cursor: pointer;
-      font-family: "Monument";
-      font-size: 0.8rem;
-      list-style-type: none;
-      margin: 10vw;
-      &:hover {
-        color: $brown;
-      }
+      li {
+        cursor: pointer;
+        font-family: "Monument";
+        font-size: 0.8rem;
+        list-style-type: none;
+        margin: 5vh;
 
-      a {
-        text-decoration: none;
-        display: block;
-        width: 100%;
+        a {
+          text-decoration: none;
+          display: block;
+          width: 100%;
+
+          span {
+            color: $black;
+            cursor: pointer;
+
+            &:hover {
+              color: $brown;
+            }
+          }
+        }
       }
     }
   }
@@ -103,7 +116,7 @@
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    
+
     z-index: 4;
     position: absolute;
     top: 50%;

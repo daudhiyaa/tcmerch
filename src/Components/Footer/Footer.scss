@@ -31,14 +31,6 @@
   @include centerize(flex, column, 0);
   background: $gray-200;
 
-  // .footer__divider {
-  //   z-index: 2;
-  //   height: 10vh;
-  //   width: 105%;
-  //   background: $white;
-  //   transform: rotate(0.3deg);
-  // }
-
   .footer__content {
     z-index: 1;
     min-height: 100vh;
@@ -72,6 +64,7 @@
       .button {
         @include coloringLink();
         span {
+          cursor: pointer;
           @include bordering(4px, 7px, 25px, 2px, 14px);
           &:hover {
             border-color: $brown;
@@ -103,11 +96,13 @@
         align-items: center;
         padding: 30px;
         @include centerize(flex, row, flex-end);
+
         h5 {
           color: $white;
           width: 100%;
           opacity: 0.5;
         }
+
         .listSosmed {
           gap: 10px;
           display: flex;
@@ -115,9 +110,15 @@
             color: $white;
             text-decoration: none;
             opacity: 0.5;
-            cursor: pointer;
             &:hover {
               opacity: 1;
+            }
+
+            svg {
+              cursor: pointer;
+              path {
+                cursor: pointer;
+              }
             }
           }
         }

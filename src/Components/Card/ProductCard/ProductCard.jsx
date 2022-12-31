@@ -18,40 +18,41 @@ function ProductCard(props) {
   const [isHoveredCart, setHoveredCart] = useState(false);
 
   return (
-    <div className={styles.productCard}>
-      <div className={styles.img}>
+    <a
+      onMouseEnter={() => {
+        setHoveredImg(true);
+      }}
+      onMouseLeave={() => {
+        setHoveredImg(false);
+      }}
+      href=""
+      className={styles.productCard}
+    >
+      <img
+        src={
+          isHoveredImg
+            ? require("../../../Assets/" + image1)
+            : require("../../../Assets/" + image2)
+        }
+        alt="hoodie"
+      ></img>
+      <div className={styles.text}>
+        <div className={styles.price}>
+          <h1>{productName}</h1>
+          <h2>{price}</h2>
+        </div>
         <img
           onMouseEnter={() => {
-            setHoveredImg(true);
+            setHoveredCart(true);
           }}
           onMouseLeave={() => {
-            setHoveredImg(false);
+            setHoveredCart(false);
           }}
-          src={
-            isHoveredImg
-              ? require("../../../Assets/" + image1)
-              : require("../../../Assets/" + image2)
-          }
-          alt="hoodie"
+          src={isHoveredCart ? coloredCart : cart}
+          alt="cart"
         ></img>
-        <div className={styles.text}>
-          <div className={styles.price}>
-            <h1>{productName}</h1>
-            <h2>{price}</h2>
-          </div>
-          <img
-            onMouseEnter={() => {
-              setHoveredCart(true);
-            }}
-            onMouseLeave={() => {
-              setHoveredCart(false);
-            }}
-            src={isHoveredCart ? coloredCart : cart}
-            alt="cart"
-          ></img>
-        </div>
       </div>
-    </div>
+    </a>
   );
 }
 

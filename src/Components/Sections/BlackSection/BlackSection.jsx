@@ -1,21 +1,12 @@
 import styles from "./BlackSection.module.scss";
+import sale from "../../../Assets/sale.png";
 
 function BlackSection() {
-  const text = () => {
-    document.querySelector(".text");
-  };
-
-  // text.innerHTML = text.innerText.split("").map(
-  //     (char, i) =>
-  //       `<span style="transform:rotate(${i * 5}deg)">${char}</span>`
-  //   ).join("");
-
   return (
     <section className={styles.blackSection}>
       <div className={styles.leftSide}>
         <div className={styles.circle}>
-          <div className={styles.logo}>M</div>
-          {/* <div className={styles.text}>SALE . SALE . SALE . SALE .</div> */}
+          M<img src={sale} alt=""></img>
         </div>
       </div>
       <div className={styles.rightSide}>
